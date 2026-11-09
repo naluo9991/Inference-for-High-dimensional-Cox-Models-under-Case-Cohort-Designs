@@ -80,7 +80,7 @@ The current script expects two input files in the R working directory:
 
 The object names above are those used in the current script. The analysis concerns METABRIC.
 
-**Data availability:** `YMETABRIC.RData` is included under `real/data/`. The processed expression file `XMETABRIC.RData` is not included, so the real-data analysis requires this additional input. Access to the original dataset alone does not supply the matched, processed R objects expected by the script.
+**Data availability:** The processed gene expression matrix ('XMETABRIC.RData') is not included in this repository because of its large file size. The survival data are provided in 'real/data/YMETABRIC.RData'.
 
 The script analyzes the full cohort and subcohorts of sizes `495`, `990`, and `1484`, adding all cases outside each subcohort. It performs one draw per subcohort size per run. The repeated-sampling comparisons and summary table in the manuscript require repeated runs and separate post-processing.
 
