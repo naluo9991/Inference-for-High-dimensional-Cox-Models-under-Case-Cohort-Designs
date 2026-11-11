@@ -100,4 +100,3 @@ For example, `n0495_S.csv` contains score-test p-values for `n0 = 495`. The p-va
 
 - Subcohort selection and cross-validation involve randomness. Reusing a saved membership vector fixes the sampled patients; reproducing the complete analysis also requires controlling cross-validation folds and random-number generation, including parallel workers where relevant.
 - Use separate output directories for repeated runs, since the current filenames do not include a repetition identifier.
-- The manuscript assumes untied failure times. The optimized cumulative-risk-set calculations in `real/real.R` do not include explicit tie handling; tied observations require a consistent, documented treatment.
